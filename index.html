@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reading Comprehension</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <br><br><br><br><br><br>
+    <p id="output">&nbsp</p>
+    <p style="text-align:center;">WPM: <input id="wpm" value="400" type="number" style="width: 60px;"><button onclick="document.getElementById('wpm').value = parseInt(document.getElementById('wpm').value) + 50">+</button><button onclick="document.getElementById('wpm').value = parseInt(document.getElementById('wpm').value) - 50">-</button></input>&nbspSyllables: <select id="syllables">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>&nbsp<button id="practice" onclick="newSentence()">Practice</button><button id="startTest" onclick="startTest()">Start Test!</button></p>
+    <br>
+    <p style="text-align:center"><button onclick="show()">Show Answer</button></p>
+    <p id="answer" style="width: 100%; text-align:center;"></p>
+    <script src="language.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
